@@ -8,5 +8,6 @@
 </head>
 <body>
 	<h1>Hello World</h1>
+	<a href="hello?name=kickscar">누르세요</a>
 </body>
 </html>
