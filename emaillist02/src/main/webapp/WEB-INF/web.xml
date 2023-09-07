@@ -3,7 +3,7 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
-	<display-name>guestbook01</display-name>
+	<display-name>emaillist02</display-name>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>
@@ -13,4 +13,13 @@
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
 
+	<servlet>
+		<servlet-name>EmaillistController</servlet-name>
+		<servlet-class>com.poscodx.emaillist.controller.EmaillistController</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EmaillistController</servlet-name>
+		<url-pattern>/el</url-pattern>
+	</servlet-mapping>
 </web-app>
