@@ -1,11 +1,11 @@
 
-<%@page import="com.poscodx.guestbook.dao.GuestbookDao"%>
 <%@page import="com.poscodx.guestbook.vo.GuestbookVo"%>
 <%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%
-		List<GuestbookVo> list = new GuestbookDao().findAll();
+	
+		List<GuestbookVo> list = (List<GuestbookVo>) request.getAttribute("list");
 %>
 
 <html>
@@ -14,7 +14,7 @@
 <title>방명록</title>
 </head>
 <body>
-	<form action="add.jsp" method="post">
+	<form action="/guestbook02/gb?a=add" method="post">
 
 	<table border=1 width=500>
 		<tr>
@@ -43,7 +43,7 @@
 			<td>[<%=count %>]</td>
 			<td><%=vo.getName() %></td>
 			<td><%=vo.getRegDate() %></td>
-			<td><a href="deleteform.jsp?no=<%=vo.getNo()%>">삭제</a></td>
+			<td><a href="/guestbook02/gb?a=deleteform&no=<%=vo.getNo()%>">삭제</a></td>
 		</tr>
 		
 		<tr>
