@@ -45,7 +45,7 @@
 		<finalName>emaillist01</finalName>
 		<plugins>
 			<plugin>
-				<groupId>org.apache.tomcat.maven.plugins</groupId>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.3.2</version>
 			</plugin>
