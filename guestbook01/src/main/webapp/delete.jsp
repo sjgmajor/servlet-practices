@@ -3,7 +3,7 @@
     pageEncoding="UTF-8"%>
 
 <%
-	request.setCharacterEncoding("utf-8");
+request.setCharacterEncoding("utf-8");
 
 	long no = Long.parseLong(request.getParameter("no"));
 	String password = request.getParameter("password");
